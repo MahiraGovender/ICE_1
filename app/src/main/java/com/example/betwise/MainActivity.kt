@@ -81,8 +81,7 @@ fun BetWiseLoginScreen(
 
     LaunchedEffect(loginUiState.isSuccess) {
         if (loginUiState.isSuccess) {
-            // TODO: Navigate to home screen
-            // navController.navigate("home") { popUpTo("login") { inclusive = true } }
+            navController.navigate("home") { popUpTo("login") { inclusive = true } }
         }
     }
 
